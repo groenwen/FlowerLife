@@ -1,0 +1,114 @@
+.banner {
+    height: 277px;
+    position: relative;
+    @include media-breakpoint-up(md) {
+        height:496px
+    }
+}
+
+.item {
+    position: relative;
+    height: 190px;
+    @include media-breakpoint-up(md) {
+        height:256px
+    }
+    div {
+        position: absolute;
+        background-color: rgba(99, 140, 161, 0.8);
+        color: $white;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        transition: all .3s;
+    }
+    h4 {
+        letter-spacing: 4px;
+        writing-mode: vertical-rl;
+        i {
+            color: $accent;
+        }
+    }
+    &:hover div {
+        background-color: rgba(220, 195, 128, 0.9);
+        color: $primary;
+
+        i {
+            color: $primary;
+        }
+    }
+}
+.cart-link {
+    position: relative;
+    &-badge {
+        position: absolute;
+        top:0px;
+        left: 23px;
+    }
+    .badge {
+        font-weight: normal;
+        border-radius: 10px;
+        padding: .25rem .4rem;
+    }
+}
+.section {
+    height: auto;
+    background-color: $white;
+    @include media-breakpoint-up(md) {
+        background-color: $secondary;
+        height: 420px;
+    }
+    &-title {
+        text-indent: 0rem;
+        text-align: center;
+        line-height: 3rem;
+        letter-spacing: 5px;
+        margin-top: 1rem;
+        @include media-breakpoint-up(md) {
+            letter-spacing: 10px;
+            text-indent: -1.2rem;
+            text-align: left;
+        }
+    }
+    &-img {
+        width: 100%;
+        height: 250px;
+        @include media-breakpoint-up(md) {
+            max-width: 460px;
+            height: 460px;
+        }
+    }
+    &-content {
+        height: auto;
+        background-color: $secondary;
+        @include media-breakpoint-up(md) {
+            height: 420px;
+        }
+        p {
+            line-height: 2rem;
+            @include media-breakpoint-up(lg) {
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+//js 
+.animatedUp {
+    opacity: 0;
+    transition: opacity 2s,transform 2s;
+    transform: translateY(50px);
+}
+.animatedLeft {
+    opacity: 0;
+    transition: opacity 2s,transform 2s;
+    transform: translateX(-50px);
+}
+.animatedRight {
+    opacity: 0;
+    transition: opacity 2s,transform 2s;
+    transform: translateX(50px);
+}
+.fadeIn {
+    opacity: 1;
+    transform: translate(0px);
+}

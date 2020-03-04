@@ -1,0 +1,146 @@
+//流程步驟狀態 架構
+.step {
+    position: relative;
+    width: 140px;
+    height: 20px;
+    @include media-breakpoint-up(md) {
+        width: 170px;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: scaleY(-50%);
+        height: 1px;
+    }
+    //當前頁面        
+    &-current {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 3px;
+            width: 14px;
+            height: 14px;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 0px;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+    //未確認頁面
+    &-unconfirmed {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+    //已確認頁面
+    &-confirmed {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "∨";
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            transform: translate(-52%, -50%);
+            font-weight: bolder;
+            font-size: 1.25rem;
+            z-index: 1;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            top: 0px;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+}
+//流程步驟狀態 配色
+.step.step-secondary {
+    &:after {
+    background-color: $secondary;
+    }
+    .step-current {
+        &:after {
+            background-color: $secondary;
+        }
+        &:before {
+            border: 1px solid $secondary;
+            background-color: $primary;
+        }
+    }
+    .step-unconfirmed {
+        &:after {
+            border: 1px solid $secondary;
+            background-color: $primary;
+        }
+    }
+    .step-confirmed {
+        &:after {
+            color: $primary;
+        }
+        &:before {
+            border: 1px solid $secondary;
+            background-color: $secondary;
+        }
+    }
+
+}
+.step.step-primary {
+    &:after {
+    background-color: $primary;
+    }
+    .step-current {
+        &:after {
+            background-color: $primary;
+        }
+        &:before {
+            border: 1px solid $primary;
+            background-color: $secondary;
+        }
+    }
+    .step-unconfirmed {
+        &:after {
+            border: 1px solid $primary;
+            background-color: $secondary;
+        }
+    }
+    .step-confirmed {
+        &:after {
+            color: $secondary;
+        }
+        &:before {
+            border: 1px solid $primary;
+            background-color: $primary;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//google font
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:500,700|Roboto:500i&display=swap&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:600&display=swap&subset=chinese-traditional');
+
+//bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../scss/helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "extend";
+//components
+@import "../scss/component/step";
+@import "../scss/component/flower-table";
+@import "../scss/component/flower-product";
+@import "../scss/component/flower-form";
+
+@import "layout";
+@import "index";
+@import "pages";
+
+
+

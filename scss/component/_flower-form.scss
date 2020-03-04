@@ -1,0 +1,42 @@
+// flower form
+.f-form {
+    background-color: $primary;
+    color: $secondary;
+    &-main {
+        padding: 30px 30px;
+        @include media-breakpoint-up(md) {
+            padding: 30px 40px;
+        }
+    }
+    &-title {
+        margin-bottom: 30px;
+    }
+    label {
+        font-size: 1.25rem;
+    }
+    a, button {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+    }
+}
+
+// input Icon
+.inputWithIcon-l {
+    position: relative;
+    &-icon {
+        @extend %inputWI-i-l;
+    }
+    .form-control {
+        padding-left: 60px;
+    }
+}
+.inputWithIcon-r {
+    position: relative;
+    &-icon {
+        @extend %inputWI-i-r;
+    }
+    .form-control {
+        padding-right: 60px;
+    }
+}

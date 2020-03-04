@@ -1,0 +1,15 @@
+//flower table
+.f-table {
+    border: 1px solid $secondary;
+    color: $thirdary;
+    &-title {
+        text-align: center;
+        background-color: $secondary;
+    }
+    &-body {
+        padding: 16px 20px;
+        table {
+            color: $thirdary;
+        }
+    }
+}

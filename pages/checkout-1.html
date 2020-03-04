@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/logo_primary.ico">
+    <meta name='description' content="Flower生活花藝，簡單的日常來一束花吧！" />
+    <meta name=”keywords” content="生活花藝, Flower, 婚禮捧花, 盆栽, 多肉植物"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>結帳 運送 | Flower生活花藝</title>
+</head>
+
+<body>
+    <a href="#" class="top position-fixed m-md-2 m-1 text-center" style="display: none;">
+        <i class="fas fa-chevron-up fa-lg"></i>
+    </a>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-hide py-0 mx-auto mx-lg-0" href="../index.html">
+                <img src="../images/logo_text.svg" height="50" class="d-inline-block align-top" alt="">
+                生活花藝
+            </a>
+            <button class="navbar-toggler border-0 order-first" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-2 order-3" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><span>首頁</span> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/product.html"><span>各式花束</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/login.html"><span>登入</span></a>
+                    </li>
+                </ul>
+            </div>
+            <a class="cart-link text-accent p-2 order-lg-3 order-2" href="../pages/cart.html">
+                <i class="fas fa-shopping-bag fa-lg"></i>
+                <div class="cart-link-badge">
+                    <span class="badge badge-primary">3</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="main">
+        <!-- checkout-1 -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-6 mb-md-0 mb-n6 px-0 px-md-2">
+                    <div class="f-form">
+                        <form class="needs-validation" id="nextPageCheckout2" novalidate>
+                            <div class="f-form-main">
+                                <div class="f-form-title d-flex justify-content-between align-items-center">
+                                    <h2 class="pr-2">運送</h2>
+                                    <div class="step step-secondary  d-flex justify-content-between">
+                                        <div class="step-current"></div>
+                                        <div class="step-unconfirmed"></div>
+                                        <div class="step-unconfirmed"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="DeliveryLastName">姓氏</label>
+                                        <input type="text" name="last_name" class="form-control" id="DeliveryLastName" placeholder="王" required>
+                                        <div class="invalid-feedback">
+                                            請輸入姓氏
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="DeliveryFirstName">名字</label>
+                                        <input type="text" name="first_name" class="form-control" id="DeliveryFirstName" placeholder="小明" required>
+                                        <div class="invalid-feedback">
+                                            請輸入名字
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="DeliveryTel">電話</label>
+                                    <input type="tel" name="tel" class="form-control" id="DeliveryTel"
+                                        placeholder="0912-345-678" required>
+                                    <div class="invalid-feedback">
+                                        請輸入電話
+                                    </div>
+                                </div>
+                                <label for="DeliveryCity">地址</label>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="DeliveryCity" class="sr-only">縣市</label>
+                                        <select name="city" class="custom-select" id="DeliveryCity" required>
+                                            <option value="" selected hidden>- 縣市 -</option>
+                                            <option value="宜蘭縣">宜蘭縣</option>
+                                            <option value="台北市">台北市</option>
+                                            <option value="新北市">新北市</option>
+                                            <option value="基隆市">基隆市</option>
+                                            <option value="桃園市">桃園市</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            請選擇縣市
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="DeliveryState" class="sr-only">鄉鎮市</label>
+                                        <select name="state" class="custom-select" id="DeliveryState" required>
+                                            <option value="" disabled selected hidden>- 鄉鎮 -</option>
+                                            <option value="員山鄉">員山鄉</option>
+                                            <option value="頭城鎮">頭城鎮</option>
+                                            <option value="礁溪鄉">礁溪鄉</option>
+                                            <option value="宜蘭市">宜蘭市</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            請選擇鄉鎮
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="DeliveryAddress" class="sr-only">地址</label>
+                                    <input type="tel" name="address" class="form-control" id="DeliveryAddress"
+                                        placeholder="幸福路520號" required>
+                                    <div class="invalid-feedback">
+                                        請輸入地址
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-accent btn-lg text-primary" >下一步</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 d-md-block d-none">
+                    <div class="f-table mb-3">
+                        <h4 class="f-table-title py-2 mb-0">
+                            訂單摘要
+                        </h4>
+                        <div class="f-table-body">
+                            <table class="table table-sm table-borderless mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">小計</td>
+                                        <td class="text-right">NT$ 2,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">運費</td>
+                                        <td class="text-right">NT$ 300</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="h5 pt-2">總計</td>
+                                        <td class="h5 pt-2 text-right">NT$ 3,000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f-table">
+                        <h4 class="f-table-title py-2 mb-0">
+                            購物清單
+                        </h4>
+                        <div class="f-table-body cartSec-list">
+                            <div class="cartSec-item">
+                                <div class="cartSec-img" style="background-image: url('../images/product01.jpg');">
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <p class="mb-1 text-truncate cartSec-text">粉色幸福花束</p>
+                                        <p class="mb-1">&nbsp;(2)</p>
+                                    </div>
+                                    <p class="h5">NT$ 900</p>
+                                </div>
+                            </div>
+                            <div class="cartSec-item">
+                                <div class="cartSec-img" style="background-image: url('../images/product02.jpg');">
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <p class="mb-1 text-truncate cartSec-text">森林系花束</p>
+                                        <p class="mb-1">&nbsp;(2)</p>
+                                    </div>
+                                    <p class="h5">NT$ 900</p>
+                                </div>
+                            </div>
+                            <div class="cartSec-item">
+                                <div class="cartSec-img" style="background-image: url('../images/product03.jpg');">
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <p class="mb-1 text-truncate cartSec-text">經典婚禮花束</p>
+                                        <p class="mb-1">&nbsp;(2)</p>
+                                    </div>
+                                    <p class="h5">NT$ 900</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="mt-6 ">
+        <div class="bg-primary py-4">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div
+                        class="col-md d-flex align-items-center pb-4 pb-md-0 justify-content-md-start justify-content-center">
+                        <img src="../images/logo_accent.svg" height="38" alt="">
+                        <h4 class="text-white pl-2 mb-0">訂閱生活花藝郵件</h4>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group inputWithIcon">
+                            <label class="inputWithIcon-icon">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </label>
+                            <input type="mail" id="email" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-accent text-primary" type="submit" id="button-addon2"><i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-warm pt-5 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <img src="../images/logo_text.svg" height="55" alt="">
+                            </div>
+                            <ul class="list-unstyled text-primary pt-5">
+                                <li>03-1234-5678</li>
+                                <li>flower@email.com </li>
+                                <li>264宜蘭縣員山鄉幸福路520號</li>
+                                <li class="pt-3">
+                                    <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="d-md-block d-none footer-vertical text-vertical font-flower text-primary my-4 my-md-0 ml-md-auto mr-md-0">
+                            今天的幸福――<br>&nbsp;就從生活花藝開始。
+                        </h4>
+                        <p class="text-right pt-5">© 2020 flower All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

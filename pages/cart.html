@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/logo_primary.ico">
+    <meta name='description' content="Flower生活花藝，簡單的日常來一束花吧！" />
+    <meta name=”keywords” content="生活花藝, Flower, 婚禮捧花, 盆栽, 多肉植物"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>購物車 | Flower生活花藝</title>
+</head>
+
+<body>
+    <a href="#" class="top position-fixed m-md-2 m-1 text-center" style="display: none;">
+        <i class="fas fa-chevron-up fa-lg"></i>
+    </a>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-hide py-0 mx-auto mx-lg-0" href="../index.html">
+                <img src="../images/logo_text.svg" height="50" class="d-inline-block align-top" alt="">
+                生活花藝
+            </a>
+            <button class="navbar-toggler border-0 order-first" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-2 order-3" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><span>首頁</span> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/product.html"><span>各式花束</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/login.html"><span>登入</span></a>
+                    </li>
+                </ul>
+            </div>
+            <a class="cart-link text-accent p-2 order-lg-3 order-2" href="../pages/cart.html">
+                <i class="fas fa-shopping-bag fa-lg"></i>
+                <div class="cart-link-badge">
+                    <span class="badge badge-primary">3</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div class="main">
+        <!-- cart -->
+        <div class="container mb-n6 mb-md-0 mt-md-4 mt-0">
+            <div class="row">
+                <div class="col-md-8 px-0 px-md-2">
+                    <h4 class="bg-secondary text-center py-2 mb-3">您的購物車</h4>
+                    <div class="cart-list px-4 px-md-0">
+                        <div class="cart-item d-md-flex justify-content-between align-items-md-center">
+                            <div class="flex-grow-1 d-flex">
+                                <div class="cart-img bg-cover mr-3"
+                                    style="background-image: url('../images/product01.jpg');">
+                                </div>
+                                <div class="d-lg-flex d-block flex-fill justify-content-between align-items-center">
+                                    <div class="cart-itemName">
+                                        <p class="h5 mb-1">粉色幸福花束</p>
+                                        <p>NT$ 450</p>
+                                    </div>
+                                    <div class="cart-count input-group input-group-sm js-order">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-reduce">-</button>
+                                        </div>
+                                        <input type="text" class="form-control bg-transparent border text-center js-order-number"
+                                            aria-label="Amount (to the nearest dollar)" value="2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-add">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal h5 mt-2 my-md-0 text-right px-md-3 py-2 py-md-0">
+                                NT$ 900
+                            </div>
+                            <div class="d-md-block d-none pr-1">
+                                <a href="" class="text-thirdary" data-toggle="modal" data-target="#staticBackdrop">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cart-item d-md-flex justify-content-between align-items-md-center">
+                            <div class="flex-grow-1 d-flex">
+                                <div class="cart-img bg-cover mr-3"
+                                    style="background-image: url('../images/product02.jpg');">
+                                </div>
+                                <div class="d-lg-flex d-block flex-fill justify-content-between align-items-center">
+                                    <div class="cart-itemName">
+                                        <p class="h5 mb-1">森林系花束</p>
+                                        <p>NT$ 450</p>
+                                    </div>
+                                    <div class="cart-count input-group input-group-sm js-order">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-reduce">-</button>
+                                        </div>
+                                        <input type="text" class="form-control bg-transparent border text-center js-order-number"
+                                            aria-label="Amount (to the nearest dollar)" value="2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-add">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal h5 mt-2 my-md-0 text-right px-md-3 py-2 py-md-0">
+                                NT$ 900
+                            </div>
+                            <div class="d-md-block d-none pr-1">
+                                <a href="" class="text-thirdary" data-toggle="modal" data-target="#staticBackdrop">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cart-item d-md-flex justify-content-between align-items-md-center">
+                            <div class="flex-grow-1 d-flex">
+                                <div class="cart-img bg-cover mr-3"
+                                    style="background-image: url('../images/product03.jpg');">
+                                </div>
+                                <div class="d-lg-flex d-block flex-fill justify-content-between align-items-center">
+                                    <div class="cart-itemName">
+                                        <p class="h5 mb-1">經典婚禮花束</p>
+                                        <p>NT$ 450</p>
+                                    </div>
+                                    <div class="cart-count input-group input-group-sm js-order">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-reduce">-</button>
+                                        </div>
+                                        <input type="text" class="form-control bg-transparent border text-center js-order-number"
+                                            aria-label="Amount (to the nearest dollar)" value="2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary text-thirdary js-order-add">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal h5 mt-2 my-md-0 text-right px-md-3 py-2 py-md-0">
+                                NT$ 900
+                            </div>
+                            <div class="d-md-block d-none pr-1">
+                                <a href="" class="text-thirdary" data-toggle="modal" data-target="#staticBackdrop">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-0 px-md-2 mt-4 mt-md-0">
+                    <div class="px-4 px-md-3 cart-summary">
+                        <table class="table table-sm table-borderless mb-0">
+                            <thead>
+                                <th colspan="2" class="h4 text-center py-2">
+                                    訂單摘要
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" width="100px" class="pt-2">小計</td>
+                                    <td class="text-right pt-2">NT$ 2,700</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">運費</td>
+                                    <td class="text-right">NT$ 300</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td class="h5 py-2">總計</td>
+                                    <td class="h5 py-2 text-right">NT$ 3,000</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <a href="../pages/checkout-1.html" class="btn btn-accent btn-lg text-primary d-block">結帳</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="staticBackdropLabel">刪除商品</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body py-5">
+                    是否確認刪除商品？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-danger btn-sm">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="mt-6 ">
+        <div class="bg-primary py-4">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div
+                        class="col-md d-flex align-items-center pb-4 pb-md-0 justify-content-md-start justify-content-center">
+                        <img src="../images/logo_accent.svg" height="38" alt="">
+                        <h4 class="text-white pl-2 mb-0">訂閱生活花藝郵件</h4>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group inputWithIcon-l">
+                            <label class="inputWithIcon-l-icon">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </label>
+                            <input type="mail" id="email" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-accent text-primary" type="submit" id="button-addon2"><i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-warm pt-5 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <img src="../images/logo_text.svg" height="55" alt="">
+                            </div>
+                            <ul class="list-unstyled text-primary pt-5">
+                                <li>03-1234-5678</li>
+                                <li>flower@email.com </li>
+                                <li>264宜蘭縣員山鄉幸福路520號</li>
+                                <li class="pt-3">
+                                    <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="d-md-block d-none footer-vertical text-vertical font-flower text-primary my-4 my-md-0 ml-md-auto mr-md-0">
+                            今天的幸福――<br>&nbsp;就從生活花藝開始。
+                        </h4>
+                        <p class="text-right pt-5">© 2020 flower All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
