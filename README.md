@@ -8,7 +8,7 @@
 * 原始設計稿 -「甜點電商」  
 ![甜點電商設計稿示意](https://groenwen.github.io/FlowerLife/images/README_image1.png)
 
-* 修改後網頁 -「花藝」主題  
+* 修改後 -「花藝」主題  
 ![花藝網站示意](https://groenwen.github.io/FlowerLife/images/README_image2.png)
 
 
