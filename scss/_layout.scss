@@ -1,9 +1,6 @@
-body, html{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 //標題特殊字型
 .font-flower {
-    font-family: 'Noto Serif TC', serif;
+    font-family: $font-flower;
 }
 //直式文字
 .text-vertical{
@@ -38,6 +35,14 @@ input[type="number"]{-moz-appearance:textfield;}
     z-index: 1030;
 }
 //navbar
+#mainNav {
+    transition: padding .5s , box-shadow .5s;
+}
+.sticky-min{
+    padding-top: 2px;
+    padding-bottom: 7px;
+    box-shadow: 3px 0px 5px #909090;
+}
 .nav-link.active{
     font-weight: 500;
     span {
@@ -49,6 +54,7 @@ input[type="number"]{-moz-appearance:textfield;}
 }
 //main
 .main {
+    margin-top: 110px;
     min-height: calc( 100vh - (110px + 60px + 556px));
 }
 //footer

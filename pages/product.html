@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../images/logo_primary.ico">
-    <meta name='description' content="Flower生活花藝，簡單的日常來一束花吧！" />
-    <meta name=”keywords” content="生活花藝, Flower, 婚禮捧花, 盆栽, 多肉植物"/>
+    <meta name="description" content="Flower生活花藝，簡單的日常來一束花吧！" />
+    <meta name="keywords" content="生活花藝, Flower, 婚禮捧花, 盆栽, 多肉植物"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="../css/all.css">
 
@@ -18,7 +18,7 @@
         <i class="fas fa-chevron-up fa-lg"></i>
     </a>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="mainNav">
         <div class="container">
             <a class="navbar-brand text-hide py-0 mx-auto mx-lg-0" href="../index.html">
                 <img src="../images/logo_text.svg" height="50" class="d-inline-block align-top" alt="">
@@ -51,303 +51,305 @@
         </div>
     </nav>
     <!-- header -->
-    <div class="container mb-md-6 px-0 px-md-2">
-        <div class="banner bg-cover" style="background-image: url('../images/banner_product.jpg');">
-            <h2 class="section-title text-vertical font-flower ml-auto pt-7 text-white">
-                簡單日常――<br>來挑選一束花吧！
-            </h2>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 mb-md-0 mb-4 px-0 px-md-2">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <div class="list-group-item text-center bg-primary text-white">
-                        <i class="fab fa-envira ml-n2"></i> 各式花束
-                        <!-- &nbsp;<i class="fas fa-seedling fa-xs"></i> -->
-                        <!-- <i class="fas fa-crow"></i>&nbsp; -->
-                    </div>
-                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active" id="list-profile-list" data-toggle="list"
-                        href="#list-profile" role="tab" aria-controls="profile">生活盆栽
-                        <span class="badge badge-primary badge-pill">4</span>
-                    </a>
-                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-messages-list" data-toggle="list"
-                        href="#list-messages" role="tab" aria-controls="messages">婚禮花束
-                        <span class="badge badge-primary badge-pill">3</span>
-                    </a>
-                    <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-settings-list" data-toggle="list"
-                        href="#list-settings" role="tab" aria-controls="settings">花藝素材
-                        <span class="badge badge-primary badge-pill">3</span>
-                    </a>
-                </div>
+    <div class="main">
+        <div class="container mb-md-6 px-0 px-md-2">
+            <div class="banner bg-cover" style="background-image: url('../images/banner_product.jpg');">
+                <h2 class="section-title text-vertical font-flower ml-auto pt-7 text-white">
+                    簡單日常――<br>來挑選一束花吧！
+                </h2>
             </div>
-            <div class="col-md-9">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-profile" role="tabpanel"
-                        aria-labelledby="list-profile-list">
-                        <!-- product 生活盆栽 列表 -->
-                        <div class="row row-cols-1 row-cols-md-2">
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-label">
-                                        本日精選
-                                    </div>
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product04.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">簡約盆栽</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product05.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">一點紅盆栽</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product06.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">多肉盆栽</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product07.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">繽紛玻璃盆栽</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-md-0 mb-4 px-0 px-md-2">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <div class="list-group-item text-center bg-primary text-white">
+                            <i class="fab fa-envira ml-n2"></i> 各式花束
+                            <!-- &nbsp;<i class="fas fa-seedling fa-xs"></i> -->
+                            <!-- <i class="fas fa-crow"></i>&nbsp; -->
                         </div>
-                        <!-- pagination -->
-                        <nav aria-label="Page navigation example ">
-                            <ul class="pagination pagination-lg justify-content-end">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active" id="list-profile-list" data-toggle="list"
+                            href="#list-profile" role="tab" aria-controls="profile">生活盆栽
+                            <span class="badge badge-primary badge-pill">4</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">婚禮花束
+                            <span class="badge badge-primary badge-pill">3</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">花藝素材
+                            <span class="badge badge-primary badge-pill">3</span>
+                        </a>
                     </div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                        <!-- product 婚禮花束 列表 -->
-                        <div class="row row-cols-1 row-cols-md-2">
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-label">
-                                        本日精選
-                                    </div>
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product01.jpg');">
-                                        <div class="product-img-hover">
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <!-- product 生活盆栽 列表 -->
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-label">
+                                            本日精選
                                         </div>
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product04.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">簡約盆栽</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
                                     </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">粉色幸福花束</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product05.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">一點紅盆栽</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
                                     </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product06.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">多肉盆栽</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product07.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">繽紛玻璃盆栽</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 500</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-label">
-                                        本日精選
-                                    </div>
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product02.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">森林系花束</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-label">
-                                        本日精選
-                                    </div>
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product03.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">經典婚禮花束</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
+                            <!-- pagination -->
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination pagination-lg justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <!-- pagination -->
-                        <nav aria-label="Page navigation example ">
-                            <ul class="pagination pagination-lg justify-content-end">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>                   
-                    </div>
-                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                        <!-- product 花藝素材 列表 -->
-                        <div class="row row-cols-1 row-cols-md-2">
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-label">
-                                        本日精選
-                                    </div>
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product08.jpg');">
-                                        <div class="product-img-hover">
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            <!-- product 婚禮花束 列表 -->
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-label">
+                                            本日精選
                                         </div>
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product01.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">粉色幸福花束</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
                                     </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">DIY自己來工具</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 200</div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-label">
+                                            本日精選
+                                        </div>
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product02.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">森林系花束</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
                                     </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-label">
+                                            本日精選
+                                        </div>
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product03.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">經典婚禮花束</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 450</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product09.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">薰衣草乾燥花</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 200</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="card border-0 product">
-                                    <div class="product-like js-product-like">
-                                        <i class="far fa-heart fa-lg"></i>
-                                        <i class="fas fa-heart fa-lg" style="display: none;"></i>
-                                    </div>
-                                    <div class="product-img bg-cover"
-                                        style="background-image: url('../images/product10.jpg');">
-                                        <div class="product-img-hover">
-                                        </div>
-                                    </div>
-                                    <div class="card-body d-flex bg-secondary">
-                                        <div class="h5 mb-0">表達心意卡片</div>
-                                        <div class="ml-auto h5 mb-0 text-accent">NT$ 50</div>
-                                    </div>
-                                    <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
-                                </div>
-                            </div>
+                            <!-- pagination -->
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination pagination-lg justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>                   
                         </div>
-                        <!-- pagination -->
-                        <nav aria-label="Page navigation example ">
-                            <ul class="pagination pagination-lg justify-content-end">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                            <!-- product 花藝素材 列表 -->
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-label">
+                                            本日精選
+                                        </div>
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product08.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">DIY自己來工具</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 200</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product09.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">薰衣草乾燥花</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 200</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card border-0 product">
+                                        <div class="product-like js-product-like">
+                                            <i class="far fa-heart fa-lg"></i>
+                                            <i class="fas fa-heart fa-lg" style="display: none;"></i>
+                                        </div>
+                                        <div class="product-img bg-cover"
+                                            style="background-image: url('../images/product10.jpg');">
+                                            <div class="product-img-hover">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex bg-secondary">
+                                            <div class="h5 mb-0">表達心意卡片</div>
+                                            <div class="ml-auto h5 mb-0 text-accent">NT$ 50</div>
+                                        </div>
+                                        <a href="" class="btn btn-primary d-block btn-lg">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pagination -->
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination pagination-lg justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -368,7 +370,7 @@
                             <label class="inputWithIcon-l-icon">
                                 <i class="fas fa-envelope fa-lg"></i>
                             </label>
-                            <input type="mail" id="email" class="form-control" aria-label="Recipient's username"
+                            <input type="email" id="email" class="form-control" aria-label="Recipient's username"
                                 aria-describedby="button-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-accent text-primary" type="submit"
