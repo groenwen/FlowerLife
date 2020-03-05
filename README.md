@@ -6,10 +6,10 @@
 因此改為「花藝」主題，重新設定 Logo、配色、圖片( 圖片來源為 CC0 )
 
 * 原始設計稿 -「甜點電商」  
-![甜點電商設計稿示意](https://groenwen.github.io/FlowerLife/images/README_image1.png)
+![甜點電商設計稿示意](https://groenwen.github.io/FlowerLife/image/README_image1.png)
 
 * 更改後 -「花藝」主題  
-![花藝網站示意](https://groenwen.github.io/FlowerLife/images/README_image2.png)
+![花藝網站示意](https://groenwen.github.io/FlowerLife/image/README_image2.png)
 
 
 ### 網頁
